@@ -6,13 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:id="@+id/llTextFields"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/btnButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tvText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/DefaultText"/>
+
+        <TextView
+            android:id="@+id/tvText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/DefaultText"/>
+
+        <TextView
+            android:id="@+id/tvText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/DefaultText"/>
+
+        <TextView
+            android:id="@+id/tvText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/DefaultText"/>
+
+        <TextView
+            android:id="@+id/tvText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/DefaultText"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/llTextFields"
+        android:theme="@style/DefaultText"
+        android:background="@color/gray"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
