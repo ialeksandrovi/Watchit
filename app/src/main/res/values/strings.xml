@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Watch it</string>
+    <string name="button_title">Button</string>
+    <string name="line">Line</string>
 </resources>
